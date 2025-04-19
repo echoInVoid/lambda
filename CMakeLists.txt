@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.30.4)
+project(lambda)
+include_directories(./include)
+aux_source_directory(./src SRC)
+set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
+add_executable(main main.cpp ${SRC})
